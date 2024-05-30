@@ -3,6 +3,18 @@
     --dark-bg: #272727;
     --light-bg: white;
     --trans: 0.3s ease;
+
+    --ecolens-theme: #044C3B;
+    --ecolens-txt: #d9e650;
+
+    --ghosthunter-theme: #0a0a0a;
+    --ghosthunter-txt: #DF6622;
+
+    --product-theme: #1D1E4E;
+    --product-txt: #FEEFAD;
+
+    --brand-theme: #EEF7FF;
+    --brand-txt: #4D869C;
 }
 
 body {
@@ -64,11 +76,43 @@ body.dark-mode #bg-btn {
     color: var(--dark-bg);
     border: 8px solid var(--dark-bg);
     border-radius: 4px;
-    transition: background-color var(--trans), color var(--trans), border-color var(--trans);
+    transition: transform 0.5s cubic-bezier(1, 0, 0, 1), color 0.5s ease, border-color 0.5s ease, background-color 0.5s ease;
 }
 
 body.dark-mode .project-btn {
     background-color: var(--dark-bg);
     color: var(--light-bg);
     border: 8px solid var(--light-bg);
+}
+
+#ecolens-hbtn:hover {
+    transform: translateX(0);
+    color: var(--ecolens-txt);
+    border-color: var(--ecolens-txt);
+    background-color: var(--ecolens-theme);
+    border-radius: 64px 0px 0px 0px;
+}
+
+#ghosthunter-hbtn:hover {
+    transform: translateX(0);
+    color: var(--ghosthunter-txt);
+    border-color: var(--ghosthunter-txt);
+    background-color: var(--ghosthunter-theme);
+    border-radius: 0px 64px 0px 0px;
+}
+
+#product-hbtn:hover {
+    transform: translateX(0);
+    color: var(--product-txt);
+    border-color: var(--product-txt);
+    background-color: var(--product-theme);
+    border-radius: 0px 0px 0px 64px;
+}
+
+#brand-hbtn:hover {
+    transform: translateX(0);
+    color: var(--brand-txt);
+    border-color: var(--brand-txt);
+    background-color: var(--brand-theme);
+    border-radius: 0px 0px 64px 0px;
 }
