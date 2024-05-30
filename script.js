@@ -8,3 +8,13 @@ function loadContent(url) {
             console.error('Error loading content:', error);
         });
 }
+
+function switchBackground() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+    if (body.classList.contains('dark-mode')) {
+        body.style.backgroundColor = 'var(--dark-bg)';
+    } else {
+        body.style.backgroundColor = 'var(--light-bg)';
+    }
+}
