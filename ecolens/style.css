@@ -12,6 +12,33 @@ body {
 
 }
 
+.home-btn {
+    position:fixed;
+	width:64px;
+	height:64px;
+	top:16px;
+	left:16px;
+	background-color:#32914F;
+	border-radius:50px;
+	box-shadow: 2px 2px 3px #32914f6e;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.25s ease;
+}
+.home-img {
+    width: 64%;
+    height: 64%;
+}
+.home-btn:hover {
+    width:72px;
+	height:72px;
+    top:12px;
+    left: 12px;
+}
+
 .page {
     height: 92vh;
     width: 100%;
