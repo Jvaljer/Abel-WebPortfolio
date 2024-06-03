@@ -1,9 +1,65 @@
-.ecolens{
-    background-color: #044C3B;
+:root {
+    --main-font: 'Outfit', sans-serif;
+
+    --ecolens-theme: #044C3B;
+    --ecolens-txt: #d9e650;
 }
-h1 {
-    color: #d9e650;
-    font-size: 6vw;
-    font-weight: 700;
+
+body {
+    background-color: var(--ecolens-theme);
+    color: var(--ecolens-txt);
+    font-family: var(--main-font);
+
 }
-body
+
+.page {
+    height: 92vh;
+    width: 100%;
+}
+/*------------------
+     First Page     
+------------------*/
+#page1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+}
+.cover-img {
+    width: 30%;
+    max-width: 1300px;
+    height: 288px;
+    object-fit: cover;
+}
+#undersea-cover {
+    border-radius: 32px 0px 0px 32px;
+}
+#mountain-cover {
+    border-radius: 0px 32px 32px 0px;
+}
+
+.bottom1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.description1 {
+    display:flex;
+    flex-direction: column;
+}
+.complement1 {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+.arrow-icon{
+    width: 80px;
+}

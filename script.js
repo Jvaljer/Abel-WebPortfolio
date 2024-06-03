@@ -9,6 +9,10 @@ function loadContent(url) {
         });
 }
 
+function navigateTo(url){
+    window.location.href = url;
+}
+
 function switchBackground() {
     const body = document.body;
     body.classList.toggle('dark-mode');
