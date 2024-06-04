@@ -4,6 +4,9 @@
     --ecolens-theme: #044C3B;
     --ecolens-txt: #d9e650;
     --light-theme: #32914F;
+
+    --title-size: 64px;
+    --description-weight: 600;
 }
 
 body {
@@ -93,7 +96,7 @@ body {
 .subtitle1 {
     border: solid 8px;
     font-size: 32px;
-    font-weight: 600;
+    font-weight: var(--description-weight);
 
     padding: 8px 48px 8px 48px;
     border-radius: 50px;
@@ -154,7 +157,7 @@ body {
     gap: 16px;
 }
 .title2 {
-    font-size: 64px;
+    font-size: var(--title-size);
     font-weight: bold;
     text-align: right;
 }
@@ -163,7 +166,7 @@ body {
     width: 66%;
     text-align: right;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: var(--description-weight);
 }
 
 .concept-list2 {
@@ -174,9 +177,66 @@ body {
 }
 .concept2 {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: var(--description-weight);
     text-align: center;
     background-color: var(--light-theme);
-    border-radius: 40px;
-    padding: 2% 4% 2% 4%;
+    border-radius: 32px;
+    /*padding: 1.5% 3.5% 1.5% 3.5%;*/
+    width: 256px;
+    height: 128px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------------------------------------
+                Third Page     
+-----------------------------------------*/
+#page3 {
+    padding-top: 104px;
+    background: rgb(4,76,59);
+    background: linear-gradient(180deg, rgba(4,76,59,1) 0%, rgba(50,145,79,1) 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+.title3 {
+    font-size: var(--title-size);
+    font-weight: bold;
+    text-align: center;
+}
+.description3 {
+    color: white;
+    width: 88%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: var(--description-weight);
+}
+
+.icon-list3 {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    gap: 8%;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.env-icon {
+    width: 20%;
+}
+
+.footer3 {
+    color: white;
+    width: 88%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: var(--description-weight);
+}
+/*-----------------------------------------
+                Fourth Page     
+-----------------------------------------*/
+#page4 {
+    background-color: rgba(50,145,79,1);
 }
