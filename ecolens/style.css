@@ -6,6 +6,7 @@
     --light-theme: #32914F;
 
     --title-size: 64px;
+    --subtitle-size: 48px;
     --description-weight: 600;
 }
 
@@ -14,7 +15,7 @@ body {
     background: linear-gradient(180deg, rgba(4,76,59,1) 0%, rgba(50,145,79,1) 30%, rgba(50,145,79,1) 50%, rgba(4,76,59,1) 100%);
     color: var(--ecolens-txt);
     font-family: var(--main-font);
-
+    overflow-x: hidden;
 }
 
 .home-btn {
@@ -56,6 +57,9 @@ body {
 }
 .smaller-hspace{
     height: 160px;
+}
+.neg-smaller-hspace{
+    height: -160px;
 }
 /*-----------------------------------------
                 First Page     
@@ -229,8 +233,7 @@ body {
     margin-bottom: 32px;
 }
 .env-icon {
-    width: 20%;
-    height: 92%;
+    width: 16%;
 }
 
 .footer3 {
@@ -246,6 +249,7 @@ body {
 #page4 {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 64px;
 }
 
@@ -326,7 +330,7 @@ body {
 .description5 {
     font-weight: var(--description-weight);
     width: 64%;
-    font-size: 32px;
+    font-size: 24px;
     color: white;
 
     background-color: var(--light-theme);
@@ -382,17 +386,56 @@ body {
 .controllers-icon {
     margin-top: -40%;
     margin-right: -12%;
-    width: 80%;
+    width: 64%;
     z-index: -1;
+    overflow: hidden;
+}
+
+/*-----------------------------------------
+        Environments (pages 7 to 9)     
+-----------------------------------------*/
+.environments {
+    display:flex;
+    flex-direction:column;
+    width: 44%;
+    gap: 16px;
+}
+.env-text {
+    display:flex;
+    flex-direction:column;
+    width: 44%;
+    gap: 24px;
+    text-align: left;
+}
+.env-text-bis {
+    display:flex;
+    flex-direction:column;
+    width: 44%;
+    gap: 32px;
+    text-align: right;
+}
+.env-title {
+    font-size: var(--subtitle-size);
+    font-weight: bold;
+}
+.env-description {
+    color: white;
+    font-size: 24px;
+    font-weight: var(--description-weight);
+}
+.env-image {
+    border-radius: 8px;
 }
 /*-----------------------------------------
                 Seventh Page     
 -----------------------------------------*/
 #page7 {
+    margin-top: -104px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    gap: 16px;
 }
 
 /*-----------------------------------------
@@ -400,9 +443,10 @@ body {
 -----------------------------------------*/
 #page8 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    gap: 16px;
 }
 
 /*-----------------------------------------
@@ -410,9 +454,10 @@ body {
 -----------------------------------------*/
 #page9 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    gap: 16px;
 }
 
 /*-----------------------------------------
