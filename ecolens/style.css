@@ -10,7 +10,8 @@
 }
 
 body {
-    background-color: var(--ecolens-theme);
+    background: rgb(4,76,59);
+    background: linear-gradient(180deg, rgba(4,76,59,1) 0%, rgba(50,145,79,1) 30%, rgba(50,145,79,1) 50%, rgba(4,76,59,1) 100%);
     color: var(--ecolens-txt);
     font-family: var(--main-font);
 
@@ -18,13 +19,15 @@ body {
 
 .home-btn {
     position:fixed;
+    z-index: 1;
 	width:64px;
 	height:64px;
 	top:16px;
 	left:16px;
+
 	background-color:var(--light-theme);
 	border-radius:50px;
-	box-shadow: 2px 2px 3px #32914f6e;
+	box-shadow: 2px 2px 3px #1d38266e;
 
     display:flex;
     justify-content: center;
@@ -48,6 +51,12 @@ body {
     width: 100%;
 }
 
+.hspace{
+    height: 332px;
+}
+.smaller-hspace{
+    height: 160px;
+}
 /*-----------------------------------------
                 First Page     
 -----------------------------------------*/
@@ -181,7 +190,6 @@ body {
     text-align: center;
     background-color: var(--light-theme);
     border-radius: 32px;
-    /*padding: 1.5% 3.5% 1.5% 3.5%;*/
     width: 256px;
     height: 128px;
 
@@ -194,9 +202,6 @@ body {
                 Third Page     
 -----------------------------------------*/
 #page3 {
-    padding-top: 104px;
-    background: rgb(4,76,59);
-    background: linear-gradient(180deg, rgba(4,76,59,1) 0%, rgba(50,145,79,1) 100%);
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -225,6 +230,7 @@ body {
 }
 .env-icon {
     width: 20%;
+    height: 92%;
 }
 
 .footer3 {
@@ -238,5 +244,93 @@ body {
                 Fourth Page     
 -----------------------------------------*/
 #page4 {
-    background-color: rgba(50,145,79,1);
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.top-objects4 {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    align-items: start;
+}
+.top-description4 {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    width: 75%;
+}
+.mid-objects4 {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    align-items: start;
+}
+.mid-description4 {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: right;
+    width: 75%;
+}
+.bot-objects4 {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    align-items: start;
+}
+.bot-description4 {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    width: 72%;
+}
+
+.objects {
+    width: 40%;
+    border-radius: 8px;
+}
+
+/*-----------------------------------------
+                Fifth Page     
+-----------------------------------------*/
+#page5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texts5{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 80%;
+    align-items: end;
+    text-align: right;
+}
+.title5 {
+    font-size: var(--title-size);
+    font-weight: bold;
+}
+.description5 {
+    font-weight: var(--description-weight);
+    width: 64%;
+    font-size: 32px;
+    color: white;
+}
+
+.capsule-image {
+    width: 80%;
+    margin-right: 16%;
+    margin-top: -8%;
 }
