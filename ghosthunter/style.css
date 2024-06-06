@@ -1,0 +1,11 @@
+:root {
+    --main-font: 'Cabin', sans-serif;
+    --snd-font: 'Cabin Condensed', sans-serif;
+
+    --dark-theme: #2F2F2F;
+    --darker-theme: #454545;
+
+    --title-color: #FFA559;
+    --text-color: #FFE6C7;
+    --highlight-color: #FF6000;
+}
